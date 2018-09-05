@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Dillam Jossue Diaz Romero</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -57,32 +57,38 @@ h1,h2,h3,h4,h5,h6 {
   <div class="w3-row w3-padding-64" id="project">
     
 	<h1 class="w3-center">Projects</h1><br>
-	<h3>Publications + Presentations + <a href= "https://github.com/diazrome" title="Code" target="_blank" class="w3-hover-text-green">Code</a></p></h3>
+	<h2>Publications + Presentations + <a href= "https://github.com/diazrome" title="Code" target="_blank" class="w3-hover-text-green">Code</a></p></h2>
 	<div class="w3-panel w3-border-left">
-		<h5>AI Summer Program Talk</h5>
-		<h8>		“ Introduction to the internet of things and Real applications” (Presentation)</h8>
+		<h3>AI Summer Program Talk</h3>
+		<h5>		“ Introduction to the internet of things and Real applications” (Presentation)</h5>
 		<p class="w3-text-grey">July 2018 </p><br>
 	</div>  
     
-	<div class="w3-content w3-padding-10" style="max-width:1000px;min-width:400px">  
+	<div class="w3-content w3-padding-64" style="max-width:1000px;min-width:500px">  
 		<div class="w3-panel w3-border-left">
-			<h5>IEEE International Conference on Pervasive Computing and Communications </h5>
-			<h8>“Activity Classification in Independent Living Environment with Jins MEME Eyewear”  </h8> 
-			<a href= "https://ieeexplore.ieee.org/document/8444580/citations" title="(Paper)" target="_blank" class="w3-hover-text-green">(Paper)</a></p>
+			<h3>IEEE International Conference on Pervasive Computing and Communications </h3>
+			<h5>“Activity Classification in Independent Living Environment with Jins MEME Eyewear”  
+			<a href= "https://ieeexplore.ieee.org/document/8444580/citations" title="(Paper)" target="_blank" class="w3-hover-text-green">(Paper)</a></p> </h5> 
 
 			<p class="w3-text-grey">March 2018</p><br>
-			<img  id="conf1" src="Images/paper1.jpg"   height="350"  onclick="onClick(this)" class="w3-hover-opacity"  alt="Activity Recognition Paper">
+			<img  id="conf1" src="Images/paper1.jpg"  style="width:100%"  onclick="onClick(this)" class="w3-hover-opacity"  alt="Activity Recognition Paper">
 	
 			<div id="myModal" class="modal"> </div>
 		</div>
 	</div>
-			<div class="w3-panel w3-padding-10" style="max-width:1000px;min-width:400px">  
-				<div class="w3-panel w3-border-left">
-					<h5>Iberoamerican Congress in Assistive Technology </h5>
-					<h8>“Toolkits for Assessment and Intervention of the Cognitive Function in Older with Dementia” (Presentation) </h8> 
+			<div class="w3-content  w3-padding-64" style="max-width:1000px;min-width:500px">  
+				<div class="w3-panel  w3-section w3-border-left">
+					<h3>Iberoamerican Congress in Assistive Technology </h3>
+					<h5>“Toolkits for Assessment and Intervention of the Cognitive Function in Older with Dementia”  <a href= "https://github.com/diazrome/diazrome.github.io/raw/master/Documents/Presentations/cag%20presentation.pdf" title="cag" target="_blank" class="w3-hover-text-green">(Presentation)</a></p> </h5> 
 					<p class="w3-text-grey">November 2017</p><br>
-				<img  id="conf1" src="Images/cag.jpg"   height="350"  onclick="onClick(this)" class="w3-hover-opacity"  alt="Activity_Recognition">
-				<div id="myModal" class="modal"> </div>
+					<div class="w3-panel style="max-width:1000px;min-width:500px"> 
+						<img class="mySlides w3-border w3-padding" src="Images/Images_Cag/cag1.jpg"   style="width:100%">
+						<img class="mySlides w3-border w3-padding" src="Images/Images_Cag/cag2.jpg"   style="width:100%">
+						<img class="mySlides w3-border w3-padding" src="Images/Images_Cag/cag3.jpg"   style="width:100%">
+					
+					</div> 
+					
+				
 				
 				</div> 
 			</div> 
@@ -124,6 +130,24 @@ function onClick(element) {
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
+ 
+}
+// carousel funton 
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2500); // Change image every 2 seconds
+
+
 }
 </script>
 
