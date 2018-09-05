@@ -1,23 +1,131 @@
+<!DOCTYPE html>
 <html>
-<head>
-<title>
-in progress ...
-</title>
-</head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
+</style>
 <body>
-<h1>
-in progress ...
-</h1>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Dillam Jossue Diaz Romero</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">  
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#project" class="w3-bar-item w3-button">Projects</a>
+      <a href="#resume" class="w3-bar-item w3-button">Resume</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+<div class="w3-row w3-padding-64" id="home">
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1400px;min-width:500px" id="home">
+  <img class="w3-image" src="Images/Main.jpg" alt="grece" width="1400" height="400">
+  <div class="w3-display-topmiddle w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Hakuna Matata...</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1400px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="Images/Bio.jpg" class="w3-round w3-image" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About Me</h1><br>
+      <p class="w3-large">My name is Dillam Diaz and I am from Bogota, Colombia. Prior to joining the M.Sc. Computing Science program at the University of Alberta, I completed my bachelor’s degree in<span class="w3-tag w3-light-grey">Biomedical Engineering</span> at the University of Rosario and Escuela Colombiana de Ingenria Julio Garavito. During my undergraduate studies in Colombia, I also worked as an Automation Engineer in the steel industry, developing hardware and applying autoencoder systems.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium"> When I came to the University of Alberta, I first did an internship, during which I performed experiments on emotion recognition and activity recognition.  These experiments were performed in the University of Alberta’s Smartcondo™, where biosignals ( EMG, EEG, EOG, SKT and EDA) were collected using wearable <span class="w3-tag w3-light-grey">sensors</span>.</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="project">
+    
+	<h1 class="w3-center">Projects</h1><br>
+	<h3>Publications + Presentations + <a href= "https://github.com/diazrome" title="Code" target="_blank" class="w3-hover-text-green">Code</a></p></h3>
+	<div class="w3-panel w3-border-left">
+		<h5>AI Summer Program Talk</h5>
+		<h8>		“ Introduction to the internet of things and Real applications” (Presentation)</h8>
+		<p class="w3-text-grey">July 2018 </p><br>
+	</div>  
+    
+	<div class="w3-content w3-padding-10" style="max-width:1000px;min-width:400px">  
+		<div class="w3-panel w3-border-left">
+			<h5>IEEE International Conference on Pervasive Computing and Communications </h5>
+			<h8>“Activity Classification in Independent Living Environment with Jins MEME Eyewear”  </h8> 
+			<a href= "https://ieeexplore.ieee.org/document/8444580/citations" title="(Paper)" target="_blank" class="w3-hover-text-green">(Paper)</a></p>
+
+			<p class="w3-text-grey">March 2018</p><br>
+			<img  id="conf1" src="Images/paper1.jpg"   height="350"  onclick="onClick(this)" class="w3-hover-opacity"  alt="Activity Recognition Paper">
+	
+			<div id="myModal" class="modal"> </div>
+		</div>
+	</div>
+			<div class="w3-panel w3-padding-10" style="max-width:1000px;min-width:400px">  
+				<div class="w3-panel w3-border-left">
+					<h5>Iberoamerican Congress in Assistive Technology </h5>
+					<h8>“Toolkits for Assessment and Intervention of the Cognitive Function in Older with Dementia” (Presentation) </h8> 
+					<p class="w3-text-grey">November 2017</p><br>
+				<img  id="conf1" src="Images/cag.jpg"   height="350"  onclick="onClick(this)" class="w3-hover-opacity"  alt="Activity_Recognition">
+				<div id="myModal" class="modal"> </div>
+				
+				</div> 
+			</div> 
+			
+			
+		
+
+  </div>
+
+  <hr>
+
+  
+ 
+<!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+<!-- google analizitic --> 
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124944755-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-124944755-1');
+</script>
+ 
+<!-- End page content -->
+</div>
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
 </script>
 
 </body>
-
 </html>
