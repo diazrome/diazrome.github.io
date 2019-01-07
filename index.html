@@ -4,7 +4,7 @@
 <title>Dillam Jossue Diaz Romero</title>
 <meta name="google-site-verification" content="DXdl88XlG4zzL7LqXr3zoaBesVZvn-3mS120lvsgivg" />
 <meta name="description" content="As a natural multitasker with experience in project management, electronic design, image processing, research responsibilities and a devotion to helping those around me to do their best work,">
-<meta name="keywords" content="Biomedical, Biosignals ,developing technology,Internet of things,Student research,visual recognition,Emotion detection">
+<meta name="keywords" content="AI, Activity Recognition, Biomedical, Biosignals ,Developing Technology, Emotion Detection, Machine Learning, Internet of Things, Student Research, Visual Recognition">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124944755-1"></script>
 <script>
@@ -50,53 +50,72 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- Right-sided navbar links. Hide them on small screens -->
     <div class="w3-right w3-hide-small">  
       <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#project" class="w3-bar-item w3-button">Projects</a>
+	  <div class="w3-dropdown-hover w3-hide-small">
+		<a href="#project" class="w3-padding-item w3-button">Projects <i class="fa fa-caret-down"></i></button> </a> 
+		
+		<div class="w3-dropdown-content w3-bar-block w3-card-4">
+			<a href="#eg"  class="w3-bar-item w3-button">Emotion Detection</a>
+			<a href="#atd" class="w3-bar-item w3-button">Activity Detection</a>
+		</div>
+      </div>
+		
       <a href="#resume" class="w3-bar-item w3-button">Resume</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a>	  
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+	  <a href="https://github.com/diazrome" class="w3-bar-item w3-button">Code</a>		  
 
     </div>
   </div>
 </div>
 <div class="w3-row w3-padding-64" id="home">
 <!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:800px;margin:auto" id="home">
-  <img class="w3-image" src="Images/Main.jpg" alt="grece" width="1000" height="350">
-  <div class="w3-display-topmiddle w3-padding-large w3-opacity">
+<header class="w3-display-container w3-content w3-wide" style="max-width:2480px;margin-middle:64px" id="home">
+  <img class="w3-image" src="Images/Main.jpg"  width="2480" height="6000" onclick="onClick(this)" class="w3-hover"  alt="Activity Recognition">
+
+<!--  <div class="w3-display-topmiddle w3-padding-large w3-opacity">
     <h1 class="w3-large">Dillam Jossue Diaz Romero</h1>
-  </div>
+  </div>  -->
 </header>
  <hr>
 <!-- Page content -->
-	<div class="w3-content" style="max-width:1000px;margin:auto">
-	  <!-- About Section -->
-	  <div class="w3-row w3-padding-64" id="about">
-		<div class="w3-col m6 w3-padding-large">
-		 <img src="Images/Bio.jpg" class="w3-round w3-image" alt="Table Setting" width="600" height="750">
-		</div>
+	<div class="w3-content  w3-light-gray" style="max-width:2480px;margin-middle:64px" >
+		<div class="w3-content "    style="max-width:1000px;margin:auto">
+		  <!-- About Section -->
+		  <div class="w3-row w3-padding-64 " id="about">
+			<div class="w3-col m6 w3-padding-large">
+			 <img src="Images/Bio.jpg" class="w3-round w3-image" alt="Table Setting" width="600" height="750">
+			</div>
 
-		<div class="w3-col m6 w3-padding-large">
-		  <h1 class="w3-center">About Me</h1><br>
-		  <p class="w3-large">My name is Dillam Diaz and I am from Bogota, Colombia. Prior to joining the M.Sc. Computing Science program at the University of Alberta, I completed my bachelor’s degree in <span class="w3-tag w3-light-grey">Biomedical Engineering</span> 
-								at the University of Rosario and Escuela Colombiana de Ingenieria Julio Garavito. During my undergraduate studies in Colombia, I also worked as an Automation Engineer in the steel industry, developing hardware and applying autoencoder systems.</p>
-		  <p class="w3-large w3-text-grey w3-hide-medium"> When I first came to the University of Alberta, I did an internship, during which I performed experiments on emotion recognition and activity recognition. 
-															These experiments were performed in the University of Alberta’s Smartcondo™, where biosignals (EMG, EEG, EOG, SKT and EDA) were collected using wearable sensors.</p>
-		</div>
-		</div>
-	</div> 
+			<div class="w3-col m6 w3-padding-large">
+			  <h1 class="w3-center">About Me</h1><br>
+			  <p class="w3-large">My name is Dillam Diaz. Prior to joining the M.Sc. Computing Science program at the University of Alberta, I completed my bachelor’s degree in <span class="w3-tag w3-light-grey">Biomedical Engineering</span> 
+									at the University of Rosario and Escuela Colombiana de Ingenieria Julio Garavito. During my undergraduate studies in Colombia, I also worked as an Automation Engineer in the steel industry, developing hardware and applying autoencoder systems.</p>
+			  <p class="w3-large w3-text-grey w3-hide-medium"> When I first came to the University of Alberta, I did an internship, during which I performed experiments on emotion recognition and activity recognition. 
+																These experiments were performed in the University of Alberta’s Smartcondo™, where biosignals (EMG, EEG, EOG, SKT and EDA) were collected using wearable sensors.</p>
+			</div>
+			</div>
+		</div> 
+	</div>
   <hr>
   
   <!-- Menu Section -->
   <div class="w3-content-center" style="max-width:1000px;margin:auto">
-	  <div class="w3-row w3-padding-64" id="project"1>
-		
+	  <div class="w3-row w3-padding-64" id="project">
 			<h1 class="w3-center">Projects</h1><br>
 			<h2> Publications + Presentations + <a href= "https://github.com/diazrome" title="Code" target="_blank" class="w3-hover-text-green">Code</a></p></h2>
-			<div class="w3-panel w3-border-left">
+				<div class="w3-panel w3-border-left " style="max-width:1000px;min-width:400px" id="eg" >
+						<h3>AGE-WELL Annual Conference 2018</h3>
+						<h5>    “A Practical EOG Device for Recognition of Activity + Emotion” Poster: <a href= "https://github.com/diazrome/diazrome.github.io/raw/master/Images/emotion.jpg" title="poster1" target="_blank" class="w3-hover-text-green">(<b>Presentation</b></a>)</h5>
+						<p class="w3-text-grey" >October 2018 </p><br>
+						<img  id="post" src="Images/emotion.jpg"  style="width:100%;margin:auto"  onclick="onClick(this)" class="w3-hover-opacity"  alt="A Practical EOG Device for Recgonition of Activity + Emotion" >
+				</div>
+			
+			<div class="w3-content  w3-padding-64" style="max-width:800px;min-width:500px;margin:auto">  
+						<div class="w3-panel  w3-section w3-border-left">
 				<h3> AI Summer Program Talk</h3>
 				<h5>		“Introduction to the Internet of Things and Real Applications” (Presentation)</h5>
 				<p class="w3-text-grey">July 2018 </p><br>
-			</div>  
-			
+						</div>  
+			</div>
 			<div class="w3-content w3-padding-64" style="max-width:1000px;min-width:500px;margin:auto">  
 				<div class="w3-panel w3-border-left">
 					<h3>IEEE International Conference on Pervasive Computing and Communications </h3>
@@ -129,8 +148,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</div> 
 					</div> 
 					
-					<div class="w3-panel w3-border-left" style="max-width:1000px;min-width:400px">
-						<h3>AGE-WELL Annual Conference</h3>
+					<div class="w3-panel w3-border-left" style="max-width:1000px;min-width:400px" id="atd">
+						<h3>AGE-WELL Annual Conference 2017</h3>
 						<h5>    “Activity Classification in Independent Living Environment with Jins MEME Eyewear” Poster: <a href= "https://github.com/diazrome/diazrome.github.io/raw/master/Images/activity.jpg" title="poster1" target="_blank" class="w3-hover-text-green">(<b>Presentation</b></a>)</h5>
 						<p class="w3-text-grey">October 2017</p><br>
 						<img  id="post" src="Images/activity.jpg"  style="width:100%;margin:auto"  onclick="onClick(this)" class="w3-hover-opacity"  alt="Activity Recognition Poster">
@@ -143,54 +162,61 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
  <!-- Resume -->
  
-
- <div class="w3-content-center" style="max-width:1000px;margin:auto">
-  <div class="w3-row w3-padding-64" id="resume">
-	  
-			<h1 class="w3-center"> Resume</h1><br>
-			<header class="w3-container w3-center">
-				<button class="w3-button w3-light-grey w3-padding-large w3-margin-top "> 
-				<a href="https://github.com/diazrome/diazrome.github.io/raw/master/Documents/Cv/Resume.pdf" title="downloadbottom" >
-				<i class="fa fa-download"></i> Download Resume</a>
-				</button>
-			</header>
-			<h3 class="w3-padding-16">  Summary</h3>
-			<ul style="list-style-type:circle">
-				<li> <p class="w3-large"> International student pursuing a master’s degree in Computing Science</p></li>
-				<li> <p class="w3-large"> Student research working on emotion detection and activity detection with deep neural networks based on head movements and biosignals(EEG, EOG, EMG)</p></li>
-				<li> <p class="w3-large"> Passionate about developing technology to improve the lives of older adults</p></li>
-			</ul>
-			<h3 class="w3-padding-16">  My Computer Skills</h3>
-			<p class="w3-wide">    ROS, Microframework</p>
-			<p class="w3-wide">    Unity, Blender</p>			
-			<p class="w3-wide">    Matlab, C++, Python</p>		
-			<p class="w3-wide">    Java,C#,PHP</p>
-			<p class="w3-wide">    SQL, JSON, HTML</p>
-			
-			<h3 class="w3-padding-16">  Work Experience</h3>
-			<div class="w3-panel w3-border-left" style="max-width:1360px;min-width:500px">
-			  <h5 class="w3-opacity"><b>   University of Alberta</b></h5>
-			  <h6 class="w3-hover-opacity"><i class="fa fa-calendar fa-fw w3-margin-right"></i>   Jan 2017 - <span class="w3-tag w3-hover w3-round">Current</span></h6>
-			  <p>   Research and Teaching Assistant, Department of Computing Science</p>
-			  <ul style="list-style-type:circle">
+	<div class="w3-content  w3-light-gray" style="max-width:2480px;margin-middle:64px" >
+		<div class="w3-content-center " style="max-width:1000px;margin:auto">
+		  <div class="w3-row w3-padding-64" id="resume">
+			  
+					<h1 class="w3-center"> Resume</h1><br>
+					<header class="w3-container w3-center">
+						<button class="w3-button w-white w3-padding-large w3-margin-top "> 
+						<a href="https://github.com/diazrome/diazrome.github.io/raw/master/Documents/Cv/Resume.pdf" title="downloadbottom" >
+						<i class="fa fa-download"></i> Download Resume</a>
+						</button>
+					</header>
+					<h3 class="w3-padding-16">  Summary</h3>
+					<ul style="list-style-type:circle">
+						<li> <p class="w3-large"> International student pursuing a master’s degree in Computing Science</p></li>
+						<li> <p class="w3-large"> Student research working on emotion detection and activity detection with deep neural networks based on head movements and biosignals(EEG, EOG, EMG)</p></li>
+						<li> <p class="w3-large"> Passionate about developing technology to improve the lives of older adults</p></li>
+					</ul>
+					 <div class="w3-half">
+						<h3 class="w3-padding-16">  My Computer Skills</h3>
+						<div class="w3-panel w3-border-left" style="max-width:1360px;min-width:500px">
+							<p class="w3-wide">    Python, Tensorflow, Panda</p>
+							<p class="w3-wide">    ROS, Microframework</p>
+							<p class="w3-wide">    Unity, Blender</p>			
+							<p class="w3-wide">    Matlab</p>		
+							<p class="w3-wide">    Java,C#,PHP</p>
+							<p class="w3-wide">    SQL, JSON, HTML</p>
+						</div>
+					 </div>
+					<div class="w3-half">
+						<h3 class="w3-padding-16">  Work Experience</h3>
+							<div class="w3-panel w3-border-left" style="max-width:1360px;min-width:500px">
+							  <h5 class="w3-opacity"><b> Robert Bosch Gmbh</b></h5>
+							  <h6 class="w3-hover-opacity"><i class="fa fa-calendar fa-fw w3-margin-right"></i>   Feb 2019 - <span class="w3-tag w3-hover w3-round ">Current</span></h6>
+							  <p>   Internship Machine Learning Evaluation for connected services</p>
+							  <ul style="list-style-type:circle">
+							</div>
+							<div class="w3-panel w3-border-left" style="max-width:1360px;min-width:500px">
+							  <h5 class="w3-opacity"><b>   University of Alberta</b></h5>
+							  <h6 class="w3-hover-opacity"><i class="fa fa-calendar fa-fw w3-margin-right"></i>   Jan 2017 - <span class="w3-tag w3-hover w3-round">Current</span></h6>
+							  <p>   Research and Teaching Assistant, Department of Computing Science</p>
+							  <ul style="list-style-type:circle">
+							</div>
+					
+						<div class="w3-panel w3-border-left" style="max-width:1360px;min-width:500px">
+						  <h5 class="w3-opacity"><b>  Laminados JAB</b></h5>
+						  <h6 class="w3-hover-opacity"><i class="fa fa-calendar fa-fw w3-margin-right"></i>   July – Dec 2016</h6>
+						  <p>   Operations Manager</p>
+						  <ul style="list-style-type:circle">
+						</div>
+					
+						
+					</div>
 			</div>
-			
-			<div class="w3-panel w3-border-left" style="max-width:1360px;min-width:500px">
-			  <h5 class="w3-opacity"><b>  Laminados JAB</b></h5>
-			  <h6 class="w3-hover-opacity"><i class="fa fa-calendar fa-fw w3-margin-right"></i>   July – Dec 2016</h6>
-			  <p>   Operations Manager</p>
-			  <ul style="list-style-type:circle">
-			</div>
-			
-			<div class="w3-panel w3-border-left" style="max-width:1000px;min-width:500px">
-			  <h5 class="w3-opacity"><b>  Cali Café</b></h5>
-			  <h6 class="w3-hover-opacity"><i class="fa fa-calendar fa-fw w3-margin-right"></i>   Jan – June 2015</h6>
-			  <p>   Computer Systems Designer</p>
-			  <ul style="list-style-type:circle">
-			</div>
+		</div>
 	</div>
-</div>
- 
   <hr>
  <!-- Container (Contact Section) --> 
  <div class="w3-content-center" style="max-width:1000px;margin:auto">
@@ -198,7 +224,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<h1 class="w3-center"> Contact</h1><br>
 			<div class="w3-col m8 w3-panel">
 				<div class="w3-large w3-margin-bottom">
-					<i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>    Edmonton, CA<br>    
+					<i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>    Abstatt, Germany<br>    
 					<i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>    <a href="mailto:diazrome@ualberta.ca">diazrome@ualberta.ca</a> <br>
 
 				</div>
